@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Metropolitan Family Hospital logo</title>
+  <desc id="desc">Circular royal blue Metropolitan Family Hospital logo with heartbeat line.</desc>
+  <circle cx="256" cy="256" r="246" fill="#21106E"/>
+  <circle cx="256" cy="256" r="186" fill="#FFFFFF"/>
+  <circle cx="256" cy="256" r="176" stroke="#21106E" stroke-width="8"/>
+  <path d="M48 253H170L199 253L216 146L238 370L255 223H290V292H319V223H346V292H370V253H464" stroke="#21106E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="topArc" d="M80 251a176 176 0 0 1 352 0" />
+  <path id="bottomArc" d="M432 261a176 176 0 0 1 -352 0" />
+  <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="800" letter-spacing="3">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">METROPOLITAN FAMILY</textPath>
+  </text>
+  <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" letter-spacing="3">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">HOSPITAL</textPath>
+  </text>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "name": "metropolitan-family-hospital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modern website for Metropolitan Family Hospital.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
