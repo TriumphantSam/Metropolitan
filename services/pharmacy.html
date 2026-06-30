@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pharmacy Services at Metropolitan Family Hospital, Akobo, Ibadan. Genuine medications, experienced pharmacists, and 24/7 prescription fulfillment."
+    />
+    <title>Pharmacy | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header service-page-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="../index.html" aria-label="Metropolitan Family Hospital home">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#departments">Departments</a>
+          <a href="../index.html#modern-care">Modern Care</a>
+          <a href="#appointment">Appointment</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="service-hero">
+        <div class="container service-hero-grid">
+          <div class="service-hero-content">
+            <a href="../index.html#services" class="back-link">&larr; Back to Services</a>
+            <span class="eyebrow">Medication Support</span>
+            <h1>Pharmacy Services</h1>
+            <p>
+              Genuine medications dispensed with professional care. Our pharmacy department is stocked 
+              and manned by registered pharmacists to ensure safety, counseling, and correct dosages.
+            </p>
+            <a href="#appointment" class="btn btn-primary">Submit Prescription Request</a>
+          </div>
+          <div class="service-hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&w=1200&q=85"
+              alt="Pharmacy counter stocked with genuine medications"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="service-details-section">
+        <div class="container service-details-grid">
+          <div class="service-rich-content">
+            <h2>Genuine medications and professional clinical guidance.</h2>
+            <p>
+              Getting the right medication is vital for your treatment. The pharmacy department at Metropolitan 
+              Family Hospital sources all medicines directly from verified pharmaceutical distributors. This guarantees 
+              the authenticity, active strength, and safety of all prescriptions. Our pharmacists do more than just 
+              dispense; they verify interactions, discuss potential side effects, and counsel you on correct schedules.
+            </p>
+
+            <h3>What We Offer</h3>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <div class="service-feature-icon">01</div>
+                <div class="service-feature-text">
+                  <h4>Prescription Dispensing</h4>
+                  <p>Accurate dispensing of acute and chronic prescription drugs with computer-aided safety checks.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">02</div>
+                <div class="service-feature-text">
+                  <h4>Pharmacist Counselling</h4>
+                  <p>One-on-one consultation regarding dosage frequency, food interactions, and maximizing treatment results.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">03</div>
+                <div class="service-feature-text">
+                  <h4>24/7 Availability</h4>
+                  <p>Continuous pharmacy coverage to support emergency admissions and night-shift clinics.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-action-banner">
+              <h2>Need to refill a chronic medication script?</h2>
+              <p>Prepare your order details and schedule a pick-up to minimize your wait time at the center.</p>
+              <a href="#appointment" class="btn btn-ghost" style="background: white;">Prepare Refill Request</a>
+            </div>
+          </div>
+
+          <aside class="service-sidebar" id="appointment">
+            <h3>Pharmacy Status</h3>
+            <ul class="service-hours-list">
+              <li><strong>Walk-in Dispensing</strong> <span style="font-weight: 700; color: var(--royal-blue);">24 Hours (Daily)</span></li>
+              <li><strong>Clinical Counselling</strong> <span>Daily: 8:00 AM - 8:00 PM</span></li>
+              <li><strong>Medication Auditing</strong> <span>Weekly Reviews</span></li>
+            </ul>
+
+            <h3>Prescription Check</h3>
+            <form class="new-appointment-form" id="appointment-form">
+              <input type="hidden" name="department" value="Pharmacy" />
+              
+              <div class="form-group">
+                <label for="name">Patient Name</label>
+                <input type="text" id="name" name="name" placeholder="David John" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 080..." required />
+              </div>
+              <div class="form-group icon-input date-input">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group icon-input time-input">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-group">
+                <span class="radio-group-title">Request Type</span>
+                <div class="radio-options-row">
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Refill Request" checked />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Refill</span>
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="New Prescription" />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">New Script</span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-submit" style="width: 100%; margin-top: 10px;">Send Request &rarr;</button>
+              <p class="form-note" id="form-note" role="status"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="../index.html">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+        <p>Royal blue and white healthcare for families in Ibadan.</p>
+        <a href="#appointment">Book an Appointment</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

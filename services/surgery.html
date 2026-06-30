@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Surgical Services at Metropolitan Family Hospital, Akobo, Ibadan. Safe general surgeries, modern operating theatres, and dedicated post-operative care."
+    />
+    <title>Surgery | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header service-page-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="../index.html" aria-label="Metropolitan Family Hospital home">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#departments">Departments</a>
+          <a href="../index.html#modern-care">Modern Care</a>
+          <a href="#appointment">Appointment</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="service-hero">
+        <div class="container service-hero-grid">
+          <div class="service-hero-content">
+            <a href="../index.html#services" class="back-link">&larr; Back to Services</a>
+            <span class="eyebrow">Surgical Care</span>
+            <h1>Surgical Services</h1>
+            <p>
+              Safe, high-standard surgical care performed by experienced surgeons. Our modern operating 
+              theatre supports both emergency operations and scheduled minor and major surgeries.
+            </p>
+            <a href="#appointment" class="btn btn-primary">Schedule Consultation</a>
+          </div>
+          <div class="service-hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1200&q=85"
+              alt="Surgeons working in a modern clean operating theatre"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="service-details-section">
+        <div class="container service-details-grid">
+          <div class="service-rich-content">
+            <h2>Clinical excellence and safety in our operating theatre.</h2>
+            <p>
+              Undergoing surgery requires trust, preparation, and precision. The surgical team at Metropolitan Family 
+              Hospital is dedicated to maintaining sterile environments, modern monitoring systems, and clear pre-operative 
+              assessments. From emergency caesarean sections and appendectomies to planned general procedures, we coordinate 
+              your path to recovery safely.
+            </p>
+
+            <h3>Surgical Capabilities</h3>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <div class="service-feature-icon">01</div>
+                <div class="service-feature-text">
+                  <h4>General Surgery & Emergencies</h4>
+                  <p>Appendectomies, hernia repairs, abscess drainages, wound management, and urgent surgical interventions.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">02</div>
+                <div class="service-feature-text">
+                  <h4>Obstetric Surgery</h4>
+                  <p>Planned and emergency Caesarean sections (C-sections) managed by experienced obstetricians and pediatric cover.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">03</div>
+                <div class="service-feature-text">
+                  <h4>Post-Operative Recovery Ward</h4>
+                  <p>Dedicated post-op recovery care, vital signs monitoring, pain management, and surgical wound follow-up.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-action-banner">
+              <h2>Preparing for an upcoming scheduled surgery?</h2>
+              <p>Download our pre-surgical checklist or call our clinical desk for guidance on preparation protocols.</p>
+              <a href="tel:08064549283" class="btn btn-ghost" style="background: white;">Contact Clinical Desk</a>
+            </div>
+          </div>
+
+          <aside class="service-sidebar" id="appointment">
+            <h3>Theatre Status</h3>
+            <ul class="service-hours-list">
+              <li><strong>Emergency Operations</strong> <span style="font-weight: 700; color: var(--royal-blue);">24 Hours (Daily)</span></li>
+              <li><strong>Scheduled Procedures</strong> <span>Mon - Sat: 9:00 AM - 4:00 PM</span></li>
+              <li><strong>Anaesthetist Coverage</strong> <span>24 Hours Standby</span></li>
+            </ul>
+
+            <h3>Surgical Consultation</h3>
+            <form class="new-appointment-form" id="appointment-form">
+              <input type="hidden" name="department" value="Surgery" />
+              
+              <div class="form-group">
+                <label for="name">Patient Name</label>
+                <input type="text" id="name" name="name" placeholder="David John" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 080..." required />
+              </div>
+              <div class="form-group icon-input date-input">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group icon-input time-input">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-group">
+                <span class="radio-group-title">Procedure Plan</span>
+                <div class="radio-options-row">
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Consultation" checked />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Consultation</span>
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Post-Op Check" />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Post-Op Review</span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-submit" style="width: 100%; margin-top: 10px;">Book Consultation &rarr;</button>
+              <p class="form-note" id="form-note" role="status"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="../index.html">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+        <p>Royal blue and white healthcare for families in Ibadan.</p>
+        <a href="#appointment">Book an Appointment</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home Based Health Care at Metropolitan Family Hospital, Akobo, Ibadan. Patient-centered care, nurse visits, medical checkups in the comfort of your home."
+    />
+    <title>Home Based Health Care | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header service-page-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="../index.html" aria-label="Metropolitan Family Hospital home">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#departments">Departments</a>
+          <a href="../index.html#modern-care">Modern Care</a>
+          <a href="#appointment">Appointment</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="service-hero">
+        <div class="container service-hero-grid">
+          <div class="service-hero-content">
+            <a href="../index.html#services" class="back-link">&larr; Back to Services</a>
+            <span class="eyebrow">At-Home Support</span>
+            <h1>Home Based Health Care</h1>
+            <p>
+              Professional medical attention brought directly to your doorstep. We coordinate doctor 
+              visits, nursing checkups, and post-operative recovery support in the comfort of your home.
+            </p>
+            <a href="#appointment" class="btn btn-primary">Request Home Care</a>
+          </div>
+          <div class="service-hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1200&q=85"
+              alt="Nurse checking senior patient at home"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="service-details-section">
+        <div class="container service-details-grid">
+          <div class="service-rich-content">
+            <h2>Compassionate nursing and medical visits at home.</h2>
+            <p>
+              For patients who face mobility challenges, are recovering from major surgery, or manage chronic 
+              conditions, visiting a clinic can be exhausting. Our Home Based Health Care program brings the 
+              quality standards of Metropolitan Family Hospital directly to you. Our licensed nursing staff 
+              conducts scheduled home visits, monitors vitals, administers medications, and provides key peace of mind.
+            </p>
+
+            <h3>What We Offer</h3>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <div class="service-feature-icon">01</div>
+                <div class="service-feature-text">
+                  <h4>Skilled Nursing Visits</h4>
+                  <p>In-home administration of injections, wound dressings, catheter care, and general vital signs monitoring.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">02</div>
+                <div class="service-feature-text">
+                  <h4>Post-Operative Recovery Support</h4>
+                  <p>Physiotherapy coordination, post-surgical monitoring, and recovery assessment to avoid hospital readmission.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">03</div>
+                <div class="service-feature-text">
+                  <h4>Geriatric Care Management</h4>
+                  <p>Regular checkups for senior family members, focusing on medication adherence, mobility checks, and nutrition.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-action-banner">
+              <h2>Need a physician home visit?</h2>
+              <p>Contact our clinical coordinators to discuss structured home-based visit calendars for your loved ones.</p>
+              <a href="tel:08064549283" class="btn btn-ghost" style="background: white;">Call Coordination Desk</a>
+            </div>
+          </div>
+
+          <aside class="service-sidebar" id="appointment">
+            <h3>Service Schedule</h3>
+            <ul class="service-hours-list">
+              <li><strong>Routine Home Visits</strong> <span>Mon - Sat: 8:00 AM - 5:00 PM</span></li>
+              <li><strong>Coordinator Support</strong> <span>Daily: 8:00 AM - 8:00 PM</span></li>
+              <li><strong>Service Area</strong> <span>Akobo & Surrounding Ibadan</span></li>
+            </ul>
+
+            <h3>Request Home Visit</h3>
+            <form class="new-appointment-form" id="appointment-form">
+              <input type="hidden" name="department" value="Home Based Health Care" />
+              
+              <div class="form-group">
+                <label for="name">Patient Name</label>
+                <input type="text" id="name" name="name" placeholder="David John" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Contact Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 080..." required />
+              </div>
+              <div class="form-group icon-input date-input">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group icon-input time-input">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-group">
+                <span class="radio-group-title">Visit Type</span>
+                <div class="radio-options-row">
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Nurse Visit" checked />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Nurse Visit</span>
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Doctor Consultation" />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Physician Visit</span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-submit" style="width: 100%; margin-top: 10px;">Request Visit &rarr;</button>
+              <p class="form-note" id="form-note" role="status"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="../index.html">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+        <p>Royal blue and white healthcare for families in Ibadan.</p>
+        <a href="#appointment">Book an Appointment</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

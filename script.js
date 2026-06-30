@@ -26,22 +26,26 @@ if (appointmentForm) {
     const formData = new FormData(appointmentForm);
     const name = formData.get("name");
     const phone = formData.get("phone");
-    const department = formData.get("department");
+    const medicalRecord = formData.get("medical_record") || "N/A";
     const date = formData.get("date");
-    const message = formData.get("message") || "No additional message provided.";
+    const time = formData.get("time");
+    const reason = formData.get("reason");
+    const department = formData.get("department");
 
     const subject = encodeURIComponent(`Appointment Request - ${name}`);
     const body = encodeURIComponent(
       [
         "Hello Metropolitan Family Hospital,",
         "",
-        "I would like to book an appointment.",
+        "I would like to book an appointment with the following details:",
         "",
         `Name: ${name}`,
-        `Phone: ${phone}`,
-        `Preferred Department: ${department}`,
+        `Phone Number: ${phone}`,
+        `Medical Record Number: ${medicalRecord}`,
         `Preferred Date: ${date}`,
-        `Message: ${message}`,
+        `Preferred Time: ${time}`,
+        `Reason for Visit: ${reason}`,
+        `Preferred Department: ${department}`,
         "",
         "Thank you.",
       ].join("\n"),

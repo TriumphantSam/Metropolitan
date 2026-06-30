@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Diagnostic & Laboratory Services at Metropolitan Family Hospital, Akobo, Ibadan. Advanced lab testing, accurate clinical reports, and fast results."
+    />
+    <title>Diagnostic & Laboratory Services | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header service-page-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="../index.html" aria-label="Metropolitan Family Hospital home">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#departments">Departments</a>
+          <a href="../index.html#modern-care">Modern Care</a>
+          <a href="#appointment">Appointment</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="service-hero">
+        <div class="container service-hero-grid">
+          <div class="service-hero-content">
+            <a href="../index.html#services" class="back-link">&larr; Back to Services</a>
+            <span class="eyebrow">Diagnostics</span>
+            <h1>Diagnostic & Laboratory Services</h1>
+            <p>
+              Accurate, reliable, and fast diagnostic testing to guide your treatment decisions. 
+              Our state-of-the-art laboratory provides comprehensive clinical analysis under strict quality controls.
+            </p>
+            <a href="#appointment" class="btn btn-primary">Schedule a Test</a>
+          </div>
+          <div class="service-hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1579154204601-01588f351167?auto=format&fit=crop&w=1200&q=85"
+              alt="Medical laboratory equipment and analysis"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="service-details-section">
+        <div class="container service-details-grid">
+          <div class="service-rich-content">
+            <h2>Accurate diagnostics for precise medical treatment.</h2>
+            <p>
+              An accurate diagnosis is the first step towards effective recovery. The laboratory department at 
+              Metropolitan Family Hospital is equipped with modern diagnostic systems and managed by registered 
+              pathologists and medical laboratory scientists. We understand that waiting for results can be stressful, 
+              which is why we focus on fast turnaround times without compromising accuracy.
+            </p>
+
+            <h3>What We Offer</h3>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <div class="service-feature-icon">01</div>
+                <div class="service-feature-text">
+                  <h4>Clinical Chemistry & Haematology</h4>
+                  <p>Comprehensive blood panels, lipid profiles, full blood counts, and metabolic function screenings.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">02</div>
+                <div class="service-feature-text">
+                  <h4>Microbiology & Parasitology</h4>
+                  <p>Culture tests, urinalysis, malaria parasite screenings, and identifying bacterial/fungal infections.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">03</div>
+                <div class="service-feature-text">
+                  <h4>Corporate Health Screenings</h4>
+                  <p>Pre-employment medical screenings, executive health packages, and routine annual wellness profiles.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-action-banner">
+              <h2>Need corporate staff health evaluations?</h2>
+              <p>Contact our administrative desk to discuss custom packages for your organization.</p>
+              <a href="mailto:metrofamilyhospital@gmail.com" class="btn btn-ghost" style="background: white;">Email Enquiries</a>
+            </div>
+          </div>
+
+          <aside class="service-sidebar" id="appointment">
+            <h3>Lab Hours</h3>
+            <ul class="service-hours-list">
+              <li><strong>Monday - Friday</strong> <span>8:00 AM - 5:00 PM</span></li>
+              <li><strong>Saturday</strong> <span>9:00 AM - 3:00 PM</span></li>
+              <li><strong>Sunday (Emergencies)</strong> <span>24 Hours Support</span></li>
+            </ul>
+
+            <h3>Schedule a Lab Test</h3>
+            <form class="new-appointment-form" id="appointment-form">
+              <input type="hidden" name="department" value="Diagnostic & Laboratory Services" />
+              
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="David John" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 080..." required />
+              </div>
+              <div class="form-group icon-input date-input">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group icon-input time-input">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-group">
+                <span class="radio-group-title">Reason for Visit</span>
+                <div class="radio-options-row">
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Routine Checkup" checked />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Checkup</span>
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Specific Concern" />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Concern</span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-submit" style="width: 100%; margin-top: 10px;">Schedule Test &rarr;</button>
+              <p class="form-note" id="form-note" role="status"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="../index.html">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+        <p>Royal blue and white healthcare for families in Ibadan.</p>
+        <a href="#appointment">Book an Appointment</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

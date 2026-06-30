@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="General Medical Services at Metropolitan Family Hospital, Akobo, Ibadan. Family-focused healthcare, expert consultations, and personalized treatment plans."
+    />
+    <title>General Medical Services | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header service-page-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="../index.html" aria-label="Metropolitan Family Hospital home">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#departments">Departments</a>
+          <a href="../index.html#modern-care">Modern Care</a>
+          <a href="#appointment">Appointment</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="service-hero">
+        <div class="container service-hero-grid">
+          <div class="service-hero-content">
+            <a href="../index.html#services" class="back-link">&larr; Back to Services</a>
+            <span class="eyebrow">Primary Care</span>
+            <h1>General Medical Services</h1>
+            <p>
+              Your first point of contact for comprehensive, family-focused healthcare. We offer expert 
+              consultations, diagnostic guidance, and tailored treatment plans for patients of all ages.
+            </p>
+            <a href="#appointment" class="btn btn-primary">Book a Consultation</a>
+          </div>
+          <div class="service-hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=85"
+              alt="Doctor consulting with a patient in a warm environment"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="service-details-section">
+        <div class="container service-details-grid">
+          <div class="service-rich-content">
+            <h2>Personalized healthcare for you and your family.</h2>
+            <p>
+              At Metropolitan Family Hospital, we believe that primary care is the cornerstone of lifelong 
+              wellness. Our General Medical Services are designed to coordinate your health needs under one roof. 
+              Whether you need treatment for an acute illness, management of a chronic condition, or preventive health 
+              screenings, our dedicated physicians are here to guide you.
+            </p>
+
+            <h3>What We Offer</h3>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <div class="service-feature-icon">01</div>
+                <div class="service-feature-text">
+                  <h4>General Physician Consultations</h4>
+                  <p>In-depth evaluations and clear discussions regarding your symptoms, diagnosis, and treatment pathways.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">02</div>
+                <div class="service-feature-text">
+                  <h4>Chronic Disease Management</h4>
+                  <p>Dedicated tracking and treatment adjustments for hypertension, diabetes, asthma, and other long-term health concerns.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">03</div>
+                <div class="service-feature-text">
+                  <h4>Preventive Health Screenings</h4>
+                  <p>Routine physical exams, wellness profiles, and lifestyle counseling to stop health issues before they start.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-action-banner">
+              <h2>Need emergency medical advice?</h2>
+              <p>For urgent cases outside regular clinic hours, our emergency services are open 24/7.</p>
+              <a href="tel:08064549283" class="btn btn-ghost" style="background: white;">Call Emergency Hotline</a>
+            </div>
+          </div>
+
+          <aside class="service-sidebar" id="appointment">
+            <h3>Clinic Hours</h3>
+            <ul class="service-hours-list">
+              <li><strong>Monday - Friday</strong> <span>8:00 AM - 6:00 PM</span></li>
+              <li><strong>Saturday</strong> <span>9:00 AM - 4:00 PM</span></li>
+              <li><strong>Sunday</strong> <span>Closed (Emergency Only)</span></li>
+            </ul>
+
+            <h3>Book an Appointment</h3>
+            <form class="new-appointment-form" id="appointment-form">
+              <input type="hidden" name="department" value="General Medical Services" />
+              
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="David John" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 080..." required />
+              </div>
+              <div class="form-group icon-input date-input">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group icon-input time-input">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-group">
+                <span class="radio-group-title">Reason for Visit</span>
+                <div class="radio-options-row">
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Routine Checkup" checked />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Checkup</span>
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Specific Concern" />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Concern</span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-submit" style="width: 100%; margin-top: 10px;">Book Consultation &rarr;</button>
+              <p class="form-note" id="form-note" role="status"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="../index.html">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+        <p>Royal blue and white healthcare for families in Ibadan.</p>
+        <a href="#appointment">Book an Appointment</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

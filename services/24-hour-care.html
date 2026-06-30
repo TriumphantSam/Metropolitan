@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="24 Hour Services at Metropolitan Family Hospital, Akobo, Ibadan. Round-the-clock clinical care, night walk-ins, and emergency consulting."
+    />
+    <title>24 Hour Services | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header service-page-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="../index.html" aria-label="Metropolitan Family Hospital home">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#departments">Departments</a>
+          <a href="../index.html#modern-care">Modern Care</a>
+          <a href="#appointment">Appointment</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="service-hero">
+        <div class="container service-hero-grid">
+          <div class="service-hero-content">
+            <a href="../index.html#services" class="back-link">&larr; Back to Services</a>
+            <span class="eyebrow">Round-The-Clock</span>
+            <h1>24 Hour Services</h1>
+            <p>
+              Always open, always prepared. Our hospital provides complete clinical consultations, admission, 
+              laboratory support, and pharmacy services 24 hours a day, 365 days a year.
+            </p>
+            <a href="#appointment" class="btn btn-primary">Book Night Visit</a>
+          </div>
+          <div class="service-hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85"
+              alt="Modern clean hospital corridor at night"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="service-details-section">
+        <div class="container service-details-grid">
+          <div class="service-rich-content">
+            <h2>Dependable clinical care, day or night.</h2>
+            <p>
+              Health concerns do not follow a calendar or a clock. The commitment of Metropolitan Family Hospital 
+              to Akobo and the broader Ibadan community means our hospital never closes its doors. Our 24-hour service 
+              structure ensures that whether you walk in at midday or need emergency guidance at 3:00 AM, you will be 
+              attended to by qualified clinical staff.
+            </p>
+
+            <h3>What We Offer</h3>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <div class="service-feature-icon">01</div>
+                <div class="service-feature-text">
+                  <h4>Night Consultations & Walk-ins</h4>
+                  <p>Qualified medical officers on duty overnight to diagnose, consult, and stabilize patients.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">02</div>
+                <div class="service-feature-text">
+                  <h4>24-Hour Pharmacy Access</h4>
+                  <p>In-patient and out-patient prescription fulfillment and medication counseling at any hour.</p>
+                </div>
+              </div>
+              <div class="service-feature-item">
+                <div class="service-feature-icon">03</div>
+                <div class="service-feature-text">
+                  <h4>Overnight Laboratory & Diagnostics</h4>
+                  <p>Rapid analysis of blood profiles, chemical testing, and urgent samples to support night-shift diagnoses.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-action-banner">
+              <h2>Need immediate medical support?</h2>
+              <p>For instant night-shift guidance, contact our admissions and duty team directly.</p>
+              <a href="tel:08064549283" class="btn btn-ghost" style="background: white;">Call Duty Officer</a>
+            </div>
+          </div>
+
+          <aside class="service-sidebar" id="appointment">
+            <h3>Availability</h3>
+            <ul class="service-hours-list">
+              <li><strong>Emergency Unit</strong> <span style="font-weight: 700; color: var(--royal-blue);">24 Hours (Daily)</span></li>
+              <li><strong>Night Clinic Shift</strong> <span>7:00 PM - 8:00 AM</span></li>
+              <li><strong>Ward Services</strong> <span>24 Hours (Daily)</span></li>
+            </ul>
+
+            <h3>Schedule a Visit</h3>
+            <form class="new-appointment-form" id="appointment-form">
+              <input type="hidden" name="department" value="24 Hour Services" />
+              
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="David John" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 080..." required />
+              </div>
+              <div class="form-group icon-input date-input">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group icon-input time-input">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-group">
+                <span class="radio-group-title">Visit Type</span>
+                <div class="radio-options-row">
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Late Checkup" checked />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Late Shift</span>
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="reason" value="Emergency Alert" />
+                    <span class="radio-indicator"></span>
+                    <span class="radio-label">Emergency</span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-submit" style="width: 100%; margin-top: 10px;">Book Visit &rarr;</button>
+              <p class="form-note" id="form-note" role="status"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="../index.html">
+          <span class="brand-mark">
+            <img src="../assets/logo.svg" alt="" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+        <p>Royal blue and white healthcare for families in Ibadan.</p>
+        <a href="#appointment">Book an Appointment</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

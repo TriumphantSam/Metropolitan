@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -165,51 +165,60 @@
           </div>
 
           <div class="services-grid">
-            <article class="service-card featured">
+            <a href="services/general-medical.html" class="service-card featured">
               <span class="service-icon">01</span>
               <h3>General Medical Services</h3>
               <p>Consultations, treatment plans, follow-up care, and preventive health guidance.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/diagnostics.html" class="service-card">
               <span class="service-icon">02</span>
               <h3>Diagnostic & Laboratory Services</h3>
               <p>Fast, reliable testing to support accurate diagnosis and treatment decisions.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/obstetrics-gynaecology.html" class="service-card">
               <span class="service-icon">03</span>
               <h3>Obstetrics & Gynaecology</h3>
               <p>Women's health, antenatal care, delivery support, and family planning guidance.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/emergency.html" class="service-card">
               <span class="service-icon">04</span>
               <h3>Emergency Medical Services</h3>
               <p>Prompt care for urgent medical concerns with clear escalation pathways.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/home-care.html" class="service-card">
               <span class="service-icon">05</span>
               <h3>Home Based Health Care</h3>
               <p>Patient-centered support for people who need supervised care at home.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/24-hour-care.html" class="service-card">
               <span class="service-icon">06</span>
               <h3>24 Hour Services</h3>
               <p>Round-the-clock care access for emergencies and time-sensitive health needs.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/specialist-clinics.html" class="service-card">
               <span class="service-icon">07</span>
               <h3>Specialist Clinics</h3>
               <p>Specialized clinical sessions designed around focused patient needs.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/surgery.html" class="service-card">
               <span class="service-icon">08</span>
               <h3>Surgery</h3>
               <p>Safe surgical care supported by clinical assessment and post-operative follow-up.</p>
-            </article>
-            <article class="service-card">
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
+            <a href="services/pharmacy.html" class="service-card">
               <span class="service-icon">09</span>
               <h3>Pharmacy</h3>
               <p>Accessible medication support, counselling, and prescription fulfillment.</p>
-            </article>
+              <span class="service-learn-more">Learn More &rarr;</span>
+            </a>
           </div>
         </div>
       </section>
@@ -288,56 +297,102 @@
         </div>
       </section>
 
-      <section class="section appointment" id="appointment">
-        <div class="container appointment-grid">
-          <div class="appointment-copy">
-            <span class="eyebrow">Book an Appointment</span>
-            <h2>Tell us what care you need.</h2>
-            <p>
-              Submit your details and the site will prepare an email request to Metropolitan Family
-              Hospital. You can also call the appointment line directly.
-            </p>
-            <div class="contact-strip">
-              <a href="tel:08064549283">08064549283</a>
-              <a href="mailto:metrofamilyhospital@gmail.com">metrofamilyhospital@gmail.com</a>
+      <section class="section appointment-section" id="appointment">
+        <div class="container appointment-container">
+          <div class="appointment-card-grid">
+            <!-- Left Column: Form -->
+            <div class="appointment-form-wrapper">
+              <span class="appointment-eyebrow">BOOK AN</span>
+              <h2 class="appointment-title">Appointment</h2>
+              
+              <form class="new-appointment-form" id="appointment-form">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="David John" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456 - 789" required />
+                  </div>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="medical_record">Medical Record Number</label>
+                  <input type="text" id="medical_record" name="medical_record" placeholder="123456-7890-0987" />
+                </div>
+                
+                <div class="form-group-row">
+                  <div class="form-group icon-input date-input">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required />
+                  </div>
+                  <div class="form-group icon-input time-input">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required />
+                  </div>
+                </div>
+                
+                <div class="form-group full-width">
+                  <span class="radio-group-title">Reason for Visit</span>
+                  <div class="radio-options-row">
+                    <label class="custom-radio">
+                      <input type="radio" name="reason" value="Routine Checkup" checked />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Routine Checkup</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="reason" value="New Patient Visit" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">New Patient Visit</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="reason" value="Specific Concern" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Specific Concern</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group full-width">
+                  <span class="radio-group-title">Department</span>
+                  <div class="radio-options-row">
+                    <label class="custom-radio">
+                      <input type="radio" name="department" value="Pediatric" checked />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Pediatric</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="department" value="Obstetrics and Gynecology" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Obstetrics and Gynecology</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="department" value="Cardiology" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Cardiology</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="department" value="Neurology" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Neurology</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-actions full-width">
+                  <button type="submit" class="btn btn-submit">Submit &rarr;</button>
+                </div>
+                <p class="form-note" id="form-note" role="status"></p>
+              </form>
+            </div>
+
+            <!-- Right Column: Doctor Graphic Visual -->
+            <div class="appointment-visual-wrapper">
+              <div class="doctor-bg-wave"></div>
+              <img src="assets/doctor.png" alt="Smiling Medical Professional" class="doctor-image-main" />
             </div>
           </div>
-
-          <form class="appointment-form" id="appointment-form">
-            <label>
-              Full Name
-              <input type="text" name="name" placeholder="Your full name" required />
-            </label>
-            <label>
-              Phone Number
-              <input type="tel" name="phone" placeholder="080..." required />
-            </label>
-            <label>
-              Preferred Department
-              <select name="department" required>
-                <option value="">Select department</option>
-                <option>General Medical Services</option>
-                <option>Laboratory Department</option>
-                <option>Nursing Department</option>
-                <option>Pharmacy Department</option>
-                <option>Obstetrics & Gynaecology</option>
-                <option>Emergency Medical Services</option>
-                <option>Surgery</option>
-                <option>Specialist Clinics</option>
-                <option>Home Based Health Care</option>
-              </select>
-            </label>
-            <label>
-              Preferred Date
-              <input type="date" name="date" required />
-            </label>
-            <label class="full">
-              Message
-              <textarea name="message" rows="4" placeholder="Briefly describe what you need"></textarea>
-            </label>
-            <button class="btn btn-primary full" type="submit">Prepare Appointment Email</button>
-            <p class="form-note" id="form-note" role="status"></p>
-          </form>
         </div>
       </section>
 
