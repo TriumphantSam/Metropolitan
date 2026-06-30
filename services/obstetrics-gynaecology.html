@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("preview") === "true" || params.get("adminaccess") === "metro2026") {
+          localStorage.setItem("mfh_authorized", "true");
+          document.cookie = "mfh_authorized=true; path=/; max-age=2592000";
+          window.location.href = window.location.pathname;
+        } else if (localStorage.getItem("mfh_authorized") !== "true" && !document.cookie.includes("mfh_authorized=true")) {
+          window.location.href = "../under-construction.html";
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
