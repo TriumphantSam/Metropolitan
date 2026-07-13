@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("preview") === "true" || params.get("adminaccess") === "metro2026") {
+          localStorage.setItem("mfh_authorized", "true");
+          document.cookie = "mfh_authorized=true; path=/; max-age=2592000";
+          window.location.href = window.location.pathname;
+        } else if (localStorage.getItem("mfh_authorized") !== "true" && !document.cookie.includes("mfh_authorized=true")) {
+          window.location.href = "under-construction.html";
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Black MD Media & Knowledge Hub. Explore educational medical videos and live radio broadcasts directly from Dr. Chukwuma Okoli."
+    />
+    <title>Black MD Hub | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="black-md-page-body" style="background: #070b14;">
+    <header class="site-header" id="top" style="background: rgba(7, 11, 20, 0.86); border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Metropolitan Family Hospital home" style="color: #ffffff;">
+          <span class="brand-mark" style="box-shadow: 0 12px 28px rgba(14, 165, 233, 0.22);">
+            <img src="assets/logo.svg" alt="Metropolitan Family Hospital Logo" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small style="color: #00d2ff;">Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" style="background: #0f172a; border-color: rgba(255,255,255,0.08);">
+          <span style="background: #00d2ff;"></span>
+          <span style="background: #00d2ff;"></span>
+          <span style="background: #00d2ff;"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" style="color: #94a3b8;">
+          <a href="index.html#services" style="color: #94a3b8;">Services</a>
+          <a href="index.html#departments" style="color: #94a3b8;">Departments</a>
+          <a href="black-md.html" style="color: #ffffff;">Black MD Hub</a>
+          <a href="blog.html" style="color: #94a3b8;">Blog</a>
+          <a href="index.html#appointment" style="color: #94a3b8;">Appointment</a>
+          <a href="index.html#contact" style="color: #94a3b8;">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Profile / Biography Showcase Section -->
+      <section class="section black-md-profile-section" style="padding-top: 64px;">
+        <div class="container">
+          <div class="section-heading" style="text-align: center; margin-bottom: 56px;">
+            <span class="eyebrow" style="color: #00d2ff; --royal-blue: #00d2ff;">Health Knowledge</span>
+            <h2>Meet Dr. Chukwuma Okoli</h2>
+            <p>Bridging the gap between clinical medicine and everyday wellness through Black MD.</p>
+          </div>
+
+          <div class="profile-showcase-card">
+            <div class="profile-image-col">
+              <img src="assets/drokoli.jpg" alt="Dr. Chukwuma Okoli" />
+            </div>
+            <div class="profile-details-col">
+              <span class="badge" style="background: linear-gradient(135deg, #0ea5e9, #00d2ff); color: #070b14; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; display: inline-block; margin-bottom: 16px;">
+                Chief Health Educator
+              </span>
+              <h3 style="font-size: clamp(1.8rem, 4vw, 2.6rem); color: #ffffff; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif;">Dr. Chukwuma Okoli (Black MD)</h3>
+              <p class="profile-quote" style="font-size: 1.15rem; color: #cbd5e1; line-height: 1.7; font-style: italic; margin-bottom: 24px; border-left: 3px solid #00d2ff; padding-left: 20px; margin-top: 0;">
+                "As medical professionals, sharing actionable, evidence-based health tips online is one of the most powerful tools we have to prevent disease and protect our families before they ever need a hospital bed."
+              </p>
+              <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.6; margin: 0;">
+                Dr. Okoli's mission with Black MD is to simplify complex clinical science into practical, daily choices. By providing verified healthcare advice on YouTube, radio, and social feeds, he helps thousands take control of their cardiovascular health, family nutrition, and lifestyle wellness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Radio Show Billboard Section -->
+      <section class="section black-md-radio-section" style="background: #0d121f; border-top: 1px solid rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.03);">
+        <div class="container">
+          <div class="radio-show-billboard">
+            <div class="radio-billboard-content">
+              <div class="radio-status-row" style="margin-bottom: 16px;">
+                <span class="live-badge" id="radio-live-badge" style="padding: 6px 14px; font-size: 0.75rem;">
+                  <span class="live-dot" style="width: 10px; height: 10px;"></span>
+                  <span id="radio-live-text" style="font-weight: 800; text-transform: uppercase;">Checking Live Status...</span>
+                </span>
+              </div>
+              <h3 style="font-size: clamp(2rem, 5vw, 3.2rem); color: #ffffff; margin: 0 0 16px 0; font-family: 'Outfit', sans-serif; font-weight: 900; line-height: 1.15;">
+                The Solution Health Show
+              </h3>
+              <p style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: #00d2ff; font-weight: 700; margin: 0 0 20px 0;">
+                📻 Solution 93.9 FM — Every Friday at 9:00 AM Live
+              </p>
+              <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6; max-width: 720px; margin: 0 0 32px 0;">
+                Join Dr. Chucks Okoli live on air as he discusses critical medical topics, shares preventative wellness tips, and opens up the hotlines for listeners in Akobo and across Ibadan to call in and ask questions.
+              </p>
+              <a href="https://www.facebook.com/chucks.okoli1" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 16px 36px; border: 1px solid #00d2ff; font-size: 1rem; box-shadow: 0 10px 25px rgba(0, 210, 255, 0.25); display: inline-flex; align-items: center; justify-content: center;">
+                Watch Live on Facebook Stream &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feeds Grid Section -->
+      <section class="section black-md-feeds-section">
+        <div class="container">
+          <div class="section-heading" style="text-align: center; margin-bottom: 48px;">
+            <span class="eyebrow" style="color: #00d2ff; --royal-blue: #00d2ff;">Video & Social Feeds</span>
+            <h2>Educational Media Channels</h2>
+            <p>Choose a platform below to watch the latest healthcare tutorials and short visual tips.</p>
+          </div>
+
+          <div class="black-md-feed-module" style="background: transparent; border: 0; padding: 0; box-shadow: none;">
+            <div class="feed-header-row" style="justify-content: center; margin-bottom: 40px;">
+              <div class="feed-tabs" role="tablist" aria-label="Social media tabs" style="padding: 8px; background: rgba(15, 23, 42, 0.6); border-color: rgba(255, 255, 255, 0.08);">
+                <button class="feed-tab is-active" role="tab" aria-selected="true" aria-controls="yt-feed-panel" id="tab-yt" data-feed="youtube" style="padding: 10px 24px; font-size: 0.95rem;">YouTube</button>
+                <button class="feed-tab" role="tab" aria-selected="false" aria-controls="tt-feed-panel" id="tab-tt" data-feed="tiktok" style="padding: 10px 24px; font-size: 0.95rem;">TikTok</button>
+                <button class="feed-tab" role="tab" aria-selected="false" aria-controls="ig-feed-panel" id="tab-ig" data-feed="instagram" style="padding: 10px 24px; font-size: 0.95rem;">Instagram</button>
+              </div>
+            </div>
+
+            <!-- YouTube Panel -->
+            <div class="feed-tab-content is-active" id="yt-feed-panel" role="tabpanel" aria-labelledby="tab-yt">
+              <!-- Featured Video Container -->
+              <div id="youtube-featured-container">
+                <!-- Dynamically populated hero card -->
+              </div>
+              
+              <!-- Secondary Videos Grid -->
+              <div class="feed-cards-grid" id="youtube-feed-container" style="grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 28px;">
+                <!-- Dynamic cards inserted here by JS -->
+              </div>
+              <div style="text-align: center; margin-top: 48px;">
+                <a href="https://youtube.com/@BlackMDGlobal" target="_blank" rel="noopener" class="btn btn-ghost" style="color: #00d2ff; box-shadow: inset 0 0 0 1px rgba(14,165,233,0.3); background: transparent; padding: 14px 32px; display: inline-flex; align-items: center; justify-content: center;">
+                  View More Videos on YouTube (@BlackMDGlobal) &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- TikTok Panel -->
+            <div class="feed-tab-content" id="tt-feed-panel" role="tabpanel" aria-labelledby="tab-tt">
+              <div class="feed-cards-grid tiktok-layout" id="tiktok-feed-container" style="grid-template-columns: repeat(3, 1fr); gap: 28px;">
+                <!-- Dynamic cards inserted here by JS -->
+              </div>
+              <div style="text-align: center; margin-top: 48px;">
+                <a href="https://tiktok.com/@Black_md1" target="_blank" rel="noopener" class="btn btn-ghost" style="color: #00d2ff; box-shadow: inset 0 0 0 1px rgba(14,165,233,0.3); background: transparent; padding: 14px 32px; display: inline-flex; align-items: center; justify-content: center;">
+                  View Past Reels on TikTok (@Black_md1) &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Instagram Panel -->
+            <div class="feed-tab-content" id="ig-feed-panel" role="tabpanel" aria-labelledby="tab-ig">
+              <div class="feed-cards-grid instagram-layout" id="instagram-feed-container" style="grid-template-columns: repeat(3, 1fr); gap: 28px;">
+                <!-- Dynamic cards inserted here by JS -->
+              </div>
+              <div style="text-align: center; margin-top: 48px;">
+                <a href="https://instagram.com/chukwumaokoli" target="_blank" rel="noopener" class="btn btn-ghost" style="color: #00d2ff; box-shadow: inset 0 0 0 1px rgba(14,165,233,0.3); background: transparent; padding: 14px 32px; display: inline-flex; align-items: center; justify-content: center;">
+                  View Past Posts on Instagram (@chukwumaokoli) &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Tweets / Quick Health Tips Section -->
+      <section class="section black-md-tweets-section" style="background: #0d121f; border-top: 1px solid rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.03); padding-top: 64px; padding-bottom: 64px;">
+        <div class="container">
+          <div class="section-heading" style="text-align: center; margin-bottom: 48px;">
+            <span class="eyebrow" style="color: #00d2ff; --royal-blue: #00d2ff;">Quick Tips</span>
+            <h2>Latest Health Thoughts on X</h2>
+            <p>Read quick, bite-sized health advice and clinical reminders from Dr. Chucks Okoli.</p>
+          </div>
+
+          <div class="feed-cards-grid" id="x-feed-container" style="grid-template-columns: repeat(2, 1fr); gap: 28px;">
+            <!-- Dynamic tweets inserted here by JS -->
+          </div>
+
+          <div style="text-align: center; margin-top: 48px;">
+            <a href="https://x.com/Chukwumaaokoli" target="_blank" rel="noopener" class="btn btn-ghost" style="color: #00d2ff; box-shadow: inset 0 0 0 1px rgba(14,165,233,0.3); background: transparent; padding: 14px 32px; display: inline-flex; align-items: center; justify-content: center;">
+              Follow on X (@Chukwumaaokoli) &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 4-Column Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid-4col">
+          <!-- Column 1: Brand Info -->
+          <div class="footer-col">
+            <a class="brand brand-footer" href="index.html">
+              <span class="brand-mark">
+                <img src="assets/logo.svg" alt="Metropolitan Logo" />
+              </span>
+              <span>
+                <strong>Metropolitan</strong>
+                <small style="color: #00d2ff;">Family Hospital</small>
+              </span>
+            </a>
+            <p class="footer-desc">
+              Royal blue and white healthcare for families in Ibadan. Providing modern, compassionate, and reliable patient-first clinical services.
+            </p>
+          </div>
+
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html#services">Our Services</a></li>
+              <li><a href="index.html#departments">Departments</a></li>
+              <li><a href="black-md.html">Black MD Hub</a></li>
+              <li><a href="blog.html">Health Blog</a></li>
+              <li><a href="index.html#appointment">Book Appointment</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Hospital Socials -->
+          <div class="footer-col">
+            <h4>Metropolitan Socials</h4>
+            <div class="footer-social-icons">
+              <a href="https://facebook.com/chucks.okoli1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📘</span> Facebook
+              </a>
+              <a href="https://x.com/metropolitanfh" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🐦</span> X (Twitter)
+              </a>
+              <a href="https://instagram.com/metrofamily1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📸</span> Instagram
+              </a>
+              <a href="https://youtube.com/@MetropolitanFamilyHospital" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📺</span> YouTube
+              </a>
+              <a href="https://tiktok.com/@metrofamily1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🎵</span> TikTok
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 4: Black MD Socials -->
+          <div class="footer-col">
+            <h4>Black MD Channels</h4>
+            <div class="footer-social-icons">
+              <a href="https://youtube.com/@BlackMDGlobal" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📺</span> YouTube
+              </a>
+              <a href="https://tiktok.com/@Black_md1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🎵</span> TikTok
+              </a>
+              <a href="https://instagram.com/chukwumaokoli" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📸</span> Instagram
+              </a>
+              <a href="https://x.com/Chukwumaaokoli" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🐦</span> X (Twitter)
+              </a>
+              <a href="https://www.facebook.com/chucks.okoli1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📘</span> Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Metropolitan Family Hospital. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="https://www.iaprecision.com/end-of-year-sale" target="_blank" rel="noopener">End of Year Sale</a>
+            <a href="#top">Back to Top &uarr;</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared JS and Page Logic -->
+    <script src="script.js"></script>
+  </body>
+</html>

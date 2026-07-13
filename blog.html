@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("preview") === "true" || params.get("adminaccess") === "metro2026") {
+          localStorage.setItem("mfh_authorized", "true");
+          document.cookie = "mfh_authorized=true; path=/; max-age=2592000";
+          window.location.href = window.location.pathname;
+        } else if (localStorage.getItem("mfh_authorized") !== "true" && !document.cookie.includes("mfh_authorized=true")) {
+          window.location.href = "under-construction.html";
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Black MD Health Journal by Dr. Chukwuma Okoli. Practical, evidence-based healthcare tips and wellness guides for families in Ibadan."
+    />
+    <title>Health Journal | Metropolitan Family Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Metropolitan Family Hospital home">
+          <span class="brand-mark">
+            <img src="assets/logo.svg" alt="Metropolitan Family Hospital Logo" />
+          </span>
+          <span>
+            <strong>Metropolitan</strong>
+            <small>Family Hospital</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#departments">Departments</a>
+          <a href="black-md.html">Black MD Hub</a>
+          <a href="blog.html" style="color: var(--royal-blue);">Blog</a>
+          <a href="index.html#appointment">Appointment</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="tel:08064549283">Call 08064549283</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Banner -->
+      <section class="blog-hero">
+        <div class="container blog-hero-content">
+          <span class="eyebrow">Medical Insights & Wellness</span>
+          <h1>The Black MD Journal</h1>
+          <p>
+            Actionable, medical advice directly from Dr. Chukwuma Okoli (Black MD) to empower you and your family toward healthier daily choices.
+          </p>
+        </div>
+      </section>
+
+      <!-- Filters & Search sticky bar -->
+      <section class="blog-filter-section">
+        <div class="container filter-container-grid">
+          <!-- Category Chips -->
+          <div class="category-chips" id="category-chips-list" role="tablist" aria-label="Article categories">
+            <button class="category-chip is-active" data-category="all" role="tab" aria-selected="true">All Articles</button>
+            <button class="category-chip" data-category="Prevention" role="tab" aria-selected="false">Prevention</button>
+            <button class="category-chip" data-category="Family Health" role="tab" aria-selected="false">Family Health</button>
+            <button class="category-chip" data-category="Wellness" role="tab" aria-selected="false">Wellness</button>
+            <button class="category-chip" data-category="Radio Recaps" role="tab" aria-selected="false">Radio Recaps</button>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="blog-search-wrapper">
+            <span class="blog-search-icon">🔍</span>
+            <input
+              type="text"
+              id="blog-search"
+              class="blog-search-input"
+              placeholder="Search articles..."
+              aria-label="Search articles"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Grid -->
+      <section class="blog-page-grid-section">
+        <div class="container">
+          <div class="blog-page-grid" id="blog-articles-grid">
+            <!-- Dynamically populated cards will be placed here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 4-Column Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid-4col">
+          <!-- Column 1: Brand Info -->
+          <div class="footer-col">
+            <a class="brand brand-footer" href="index.html">
+              <span class="brand-mark">
+                <img src="assets/logo.svg" alt="Metropolitan Logo" />
+              </span>
+              <span>
+                <strong>Metropolitan</strong>
+                <small>Family Hospital</small>
+              </span>
+            </a>
+            <p class="footer-desc">
+              Royal blue and white healthcare for families in Ibadan. Providing modern, compassionate, and reliable patient-first clinical services.
+            </p>
+          </div>
+
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html#services">Our Services</a></li>
+              <li><a href="index.html#departments">Departments</a></li>
+              <li><a href="black-md.html">Black MD Hub</a></li>
+              <li><a href="blog.html">Health Blog</a></li>
+              <li><a href="index.html#appointment">Book Appointment</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Hospital Socials -->
+          <div class="footer-col">
+            <h4>Metropolitan Socials</h4>
+            <div class="footer-social-icons">
+              <a href="https://facebook.com/chucks.okoli1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📘</span> Facebook
+              </a>
+              <a href="https://x.com/metropolitanfh" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🐦</span> X (Twitter)
+              </a>
+              <a href="https://instagram.com/metrofamily1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📸</span> Instagram
+              </a>
+              <a href="https://youtube.com/@MetropolitanFamilyHospital" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📺</span> YouTube
+              </a>
+              <a href="https://tiktok.com/@metrofamily1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🎵</span> TikTok
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 4: Black MD Socials -->
+          <div class="footer-col">
+            <h4>Black MD Channels</h4>
+            <div class="footer-social-icons">
+              <a href="https://youtube.com/@BlackMDGlobal" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📺</span> YouTube
+              </a>
+              <a href="https://tiktok.com/@Black_md1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🎵</span> TikTok
+              </a>
+              <a href="https://instagram.com/chukwumaokoli" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📸</span> Instagram
+              </a>
+              <a href="https://x.com/Chukwumaaokoli" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">🐦</span> X (Twitter)
+              </a>
+              <a href="https://www.facebook.com/chucks.okoli1" target="_blank" rel="noopener" class="social-link-icon-text">
+                <span class="social-icon-wrapper">📘</span> Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Metropolitan Family Hospital. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="https://www.iaprecision.com/end-of-year-sale" target="_blank" rel="noopener">End of Year Sale</a>
+            <a href="#top">Back to Top &uarr;</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared JS and Page Logic -->
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let activeCategory = "all";
+        let searchQuery = "";
+
+        const grid = document.getElementById("blog-articles-grid");
+        const searchInput = document.getElementById("blog-search");
+        const categoryChips = document.querySelectorAll(".category-chip");
+
+        function renderBlogPage() {
+          if (!grid) return;
+
+          // Filter articles
+          const filteredPosts = BLOG_POSTS.filter(post => {
+            const matchesCategory = activeCategory === "all" || post.category === activeCategory;
+            const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                  post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+            return matchesCategory && matchesSearch;
+          });
+
+          if (filteredPosts.length === 0) {
+            grid.innerHTML = `
+              <div class="no-results-block">
+                <span>🔍</span>
+                <h3>No articles found</h3>
+                <p>We couldn't find any articles matching your search query. Try typing something else or selecting another category.</p>
+              </div>
+            `;
+            return;
+          }
+
+          grid.innerHTML = filteredPosts.map(post => `
+            <article class="blog-card light-card" id="blog-page-card-${post.id}">
+              <div class="blog-card-image">
+                <img src="${post.image}" alt="${post.title}" />
+                <span class="blog-category-tag">${post.category}</span>
+              </div>
+              <div class="blog-card-content">
+                <div class="blog-card-meta">
+                  <span>📅 ${post.date}</span>
+                  <span>⏱ ${post.readTime}</span>
+                </div>
+                <h3 class="blog-card-title">${post.title}</h3>
+                <p class="blog-card-excerpt">${post.excerpt}</p>
+                <a href="javascript:void(0)" onclick="openArticleModal(${post.id})" class="blog-read-link">
+                  Read Article <span>&rarr;</span>
+                </a>
+              </div>
+            </article>
+          `).join('');
+        }
+
+        // Search Input listener
+        if (searchInput) {
+          searchInput.addEventListener("input", (e) => {
+            searchQuery = e.target.value;
+            renderBlogPage();
+          });
+        }
+
+        // Category Chips tab navigation listeners
+        categoryChips.forEach(chip => {
+          chip.addEventListener("click", () => {
+            categoryChips.forEach(c => {
+              c.classList.remove("is-active");
+              c.setAttribute("aria-selected", "false");
+            });
+            chip.classList.add("is-active");
+            chip.setAttribute("aria-selected", "true");
+            activeCategory = chip.getAttribute("data-category");
+            renderBlogPage();
+          });
+        });
+
+        // Initial Render
+        renderBlogPage();
+      });
+    </script>
+  </body>
+</html>
