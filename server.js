@@ -2,7 +2,6 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const port = process.env.PORT || 3000;
 const root = __dirname;
 
 // Read .env file if present (zero-dependency env loader)
@@ -20,6 +19,8 @@ if (fs.existsSync(envPath)) {
   });
 }
 
+const port = process.env.PORT || 3000;
+
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -33,43 +34,11 @@ const mimeTypes = {
 };
 
 const server = http.createServer((request, response) => {
-  // Parse cookies
-  const cookies = {};
-  const cookieHeader = request.headers.cookie;
-  if (cookieHeader) {
-    cookieHeader.split(";").forEach((cookie) => {
-      const parts = cookie.split("=");
-      cookies[parts[0].trim()] = (parts[1] || "").trim();
-    });
-  }
-  const isAuthorized = cookies["mfh_authorized"] === "true";
-
-  // Check query parameter
   const parsedUrl = new URL(request.url, `http://${request.headers.host || "localhost"}`);
-  const previewKey = process.env.PREVIEW_KEY || "preview";
-  const previewValue = process.env.PREVIEW_VALUE || "true";
-  const hasPreviewParam = parsedUrl.searchParams.get(previewKey) === previewValue;
-
-  if (hasPreviewParam) {
-    response.writeHead(302, {
-      "Set-Cookie": "mfh_authorized=true; Path=/; Max-Age=2592000", // 30 days
-      "Location": "/"
-    });
-    response.end();
-    return;
-  }
-
   let requestedPath = parsedUrl.pathname === "/" ? "/index.html" : parsedUrl.pathname;
   const safePath = path.normalize(decodeURIComponent(requestedPath)).replace(/^(\.\.[/\\])+/, "");
-  const ext = path.extname(safePath);
 
-  // If requesting HTML and not authorized, serve the under-construction page
   let filePath = path.join(root, safePath);
-  const isHtmlRequest = ext === "" || ext === ".html";
-
-  if (isHtmlRequest && !isAuthorized) {
-    filePath = path.join(root, "under-construction.html");
-  }
 
   fs.readFile(filePath, (error, content) => {
     if (error) {
