@@ -719,6 +719,18 @@ h3 {
   line-height: 1;
 }
 
+.mo-card::after {
+  content: "MED";
+}
+
+.eye-card::after {
+  content: "EYE";
+}
+
+.dentist-card::after {
+  content: "DEN";
+}
+
 .lab-card::after {
   content: "LAB";
 }

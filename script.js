@@ -161,7 +161,7 @@ const BLOG_POSTS = [
     readTime: "5 min read",
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
     content: `
-      <p>On our latest broadcast of the <strong>Solution Health Show</strong> on Solution 93.9 FM, Dr. Chucks Okoli focused on a topic that many of us neglect: sleep hygiene. In today's fast-paced environment, sleep is often viewed as a luxury. However, from a clinical perspective, sleep is a biological necessity crucial for both physical and mental wellness.</p>
+      <p>On our latest broadcast of the <strong>Solution Health Talk</strong> on Solution 93.9 FM, Dr. Chucks Okoli focused on a topic that many of us neglect: sleep hygiene. In today's fast-paced environment, sleep is often viewed as a luxury. However, from a clinical perspective, sleep is a biological necessity crucial for both physical and mental wellness.</p>
 
       <h3>Why Sleep Matters for Your Mind and Body</h3>
       <p>During sleep, your brain consolidates memories, clears out cellular waste, and repairs neural connections. Depriving yourself of sleep triggers a stress response, releasing cortisol and adrenaline. This can lead to increased anxiety, mood swings, impaired decision-making, and weakened immune function.</p>

@@ -238,6 +238,21 @@
           </div>
 
           <div class="department-list">
+            <article class="department-card mo-card">
+              <span>MO</span>
+              <h3>Medical Officer Department</h3>
+              <p>General doctor consultation for everyday health complaints like malaria, fever, routine symptoms, and medical guidance.</p>
+            </article>
+            <article class="department-card eye-card">
+              <span>EYE</span>
+              <h3>Ophthalmologist & Optician</h3>
+              <p>Comprehensive eye examinations, vision care, prescription optical services, and treatment for eye conditions.</p>
+            </article>
+            <article class="department-card dentist-card">
+              <span>DEN</span>
+              <h3>Dental Care (Dentist)</h3>
+              <p>Oral health checkups, teeth cleaning, dental treatments, cavity care, and oral hygiene consulting.</p>
+            </article>
             <article class="department-card lab-card">
               <span>LAB</span>
               <h3>Laboratory Department</h3>
@@ -322,9 +337,9 @@
             <!-- Right Column: Radio Show & Media Channels Teaser -->
             <div class="black-md-profile-card" style="justify-content: flex-start; gap: 24px;">
               <div>
-                <h3 style="color: #ffffff; font-size: 1.3rem; margin: 0 0 12px 0;">🎙️ Solution 93.9 FM Radio Show</h3>
+                <h3 style="color: #ffffff; font-size: 1.3rem; margin: 0 0 12px 0;">🎙️ Solution 93.9 FM Radio Health Talk</h3>
                 <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin: 0;">
-                  Tune in every <strong>Friday at 9:00 AM</strong> for "The Solution Health Show". Dr. Chucks Okoli goes live on the radio and on Facebook to share health tips and take live calls from listeners in Ibadan.
+                  Tune in every <strong>Friday at 9:00 AM</strong> for "The Solution Health Talk". Dr. Chucks Okoli goes live on the radio and on Facebook to share health tips and take live calls from listeners in Ibadan.
                 </p>
               </div>
               
@@ -412,6 +427,11 @@
                       <span class="radio-label">New Patient Visit</span>
                     </label>
                     <label class="custom-radio">
+                      <input type="radio" name="reason" value="Returning / Old Patient Visit" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Returning / Old Patient Visit</span>
+                    </label>
+                    <label class="custom-radio">
                       <input type="radio" name="reason" value="Specific Concern" />
                       <span class="radio-indicator"></span>
                       <span class="radio-label">Specific Concern</span>
@@ -423,7 +443,22 @@
                   <span class="radio-group-title">Department</span>
                   <div class="radio-options-row">
                     <label class="custom-radio">
-                      <input type="radio" name="department" value="Pediatric" checked />
+                      <input type="radio" name="department" value="Medical Officer (General)" checked />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Medical Officer (General)</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="department" value="Ophthalmologist / Optician" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Ophthalmologist / Optician</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="department" value="Dentist" />
+                      <span class="radio-indicator"></span>
+                      <span class="radio-label">Dentist</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="department" value="Pediatric" />
                       <span class="radio-indicator"></span>
                       <span class="radio-label">Pediatric</span>
                     </label>
