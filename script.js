@@ -217,64 +217,110 @@ const SOCIAL_FEEDS = {
   ],
   tiktok: [
     {
-      title: "3 signs you are dehydrated! 💧 Listen to your body! #healthtips #blackmd #dehydration #tips",
+      title: "Build your immunity the natural way! 💧 Listen to your body! #healthtips #blackmd #immunity",
       views: "120K views",
       likes: "12K likes",
       author: "@Black_md1",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80",
-      videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-vertical-shot-of-a-doctor-explaining-something-42286-large.mp4",
+      image: "https://i2.ytimg.com/vi/U38YewfJgjw/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/U38YewfJgjw",
       channelUrl: "https://tiktok.com/@Black_md1"
     },
     {
-      title: "Stop buying antibiotics over the counter! Direct doctor warning. 🙅‍♂️💊 #antibiotics #medtok #caution",
+      title: "Eat fruits and do road walk: way to healthier life. 🙅‍♂️💊 #blackmd #healthyliving",
       views: "85K views",
       likes: "9.8K likes",
       author: "@Black_md1",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80",
-      videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-doctor-writing-a-prescription-at-his-desk-42278-large.mp4",
+      image: "https://i1.ytimg.com/vi/lADPFcDC6KQ/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/lADPFcDC6KQ",
+      channelUrl: "https://tiktok.com/@Black_md1"
+    },
+    {
+      title: "You are what you eat! Pls watch . 🥗 #healthyliving #blackmd #nutrition",
+      views: "95K views",
+      likes: "14K likes",
+      author: "@Black_md1",
+      image: "https://i1.ytimg.com/vi/8V0MftQ7fZI/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/8V0MftQ7fZI",
       channelUrl: "https://tiktok.com/@Black_md1"
     }
   ],
   instagram: [
     {
-      title: "A healthy family is a happy family. 👨‍👩‍👧‍👦 Here are my top 3 rules for pediatric care at home...",
+      title: "Build your immunity the natural way! 👨‍👩‍👧‍👦 Here are my top rules for pediatric care at home...",
       views: "1.2K likes",
       likes: "48 comments",
       author: "@chukwumaokoli",
-      image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80",
-      videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-doctor-explaining-something-to-his-patient-42287-large.mp4",
+      image: "https://i2.ytimg.com/vi/U38YewfJgjw/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/U38YewfJgjw",
       channelUrl: "https://instagram.com/chukwumaokoli"
     },
     {
-      title: "Behind the scenes at Solution 93.9 FM. Grateful for everyone who phoned in today! Let's build healthy habits.",
+      title: "Eat fruits and do road walk: way to healthier life. 📻 Solution 93.9 FM live session.",
       views: "950 likes",
       likes: "32 comments",
       author: "@chukwumaokoli",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80",
-      videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-doctor-holding-a-stethoscope-42279-large.mp4",
+      image: "https://i1.ytimg.com/vi/lADPFcDC6KQ/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/lADPFcDC6KQ",
+      channelUrl: "https://instagram.com/chukwumaokoli"
+    },
+    {
+      title: "AUTISM WARNING SIGNS; THE parent’s checklist 🩺 #blackmd #pediatrics",
+      views: "2.1K likes",
+      likes: "64 comments",
+      author: "@chukwumaokoli",
+      image: "https://i1.ytimg.com/vi/pYaPJnBn62Q/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/pYaPJnBn62Q",
       channelUrl: "https://instagram.com/chukwumaokoli"
     }
   ],
   x: [
     {
-      name: "Dr. Chucks Okoli (Black MD)",
-      handle: "@Chukwumaaokoli",
-      time: "2 hours ago",
-      text: "Hypertension doesn't always show symptoms until it's too late. That's why it is called the silent killer. Check your BP today, it takes less than 2 minutes and could save your life. 🩺 #Prevention #BloodPressure",
-      retweets: "142",
-      likes: "310",
+      name: "BLACK MD",
+      handle: "@ChukwumaOkoli",
+      time: "Aug 9",
+      text: "Build your immunity the natural way! #blackmd #health",
+      retweets: "16",
+      likes: "2",
       image: "assets/drokoli.jpg",
-      url: "https://x.com/Chukwumaaokoli"
+      videoThumb: "https://i2.ytimg.com/vi/U38YewfJgjw/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/U38YewfJgjw",
+      url: "https://x.com/ChukwumaOkoli"
     },
     {
-      name: "Dr. Chucks Okoli (Black MD)",
-      handle: "@Chukwumaaokoli",
-      time: "1 day ago",
-      text: "Your body is a temple, but many treat it like a rental. Drink enough water, get 7-8 hours of sleep, move your body daily. Small consistent steps build long-term wellness. 💧💤🏃‍♂️",
-      retweets: "98",
-      likes: "250",
+      name: "BLACK MD",
+      handle: "@ChukwumaOkoli",
+      time: "Aug 6",
+      text: "Eat fruits and do road walk: way to healthier life. 🍎🏃‍♂️ #blackmd #healthyliving",
+      retweets: "24",
+      likes: "45",
       image: "assets/drokoli.jpg",
-      url: "https://x.com/Chukwumaaokoli"
+      videoThumb: "https://i1.ytimg.com/vi/lADPFcDC6KQ/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/lADPFcDC6KQ",
+      url: "https://x.com/ChukwumaOkoli"
+    },
+    {
+      name: "BLACK MD",
+      handle: "@ChukwumaOkoli",
+      time: "Aug 4",
+      text: "You are what you eat! Pls watch and learn. 🥗 #healthyliving #blackmd #nutrition",
+      retweets: "38",
+      likes: "82",
+      image: "assets/drokoli.jpg",
+      videoThumb: "https://i1.ytimg.com/vi/8V0MftQ7fZI/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/8V0MftQ7fZI",
+      url: "https://x.com/ChukwumaOkoli"
+    },
+    {
+      name: "BLACK MD",
+      handle: "@ChukwumaOkoli",
+      time: "Jul 30",
+      text: "HANTAVIRUS: The Beginning. Learn preventative steps and early warning signs. 🩺 #prevention #blackmd",
+      retweets: "52",
+      likes: "110",
+      image: "assets/drokoli.jpg",
+      videoThumb: "https://i1.ytimg.com/vi/hARbjZkl4Aw/hqdefault.jpg",
+      embedUrl: "https://www.youtube.com/embed/hARbjZkl4Aw",
+      url: "https://x.com/ChukwumaOkoli"
     }
   ]
 };
@@ -365,6 +411,8 @@ function renderSocialFeeds() {
   // TikTok Panel
   const ttContainer = document.getElementById("tiktok-feed-container");
   if (ttContainer) {
+    ttContainer.style.gridTemplateColumns = "repeat(3, 1fr)";
+    ttContainer.style.justifyItems = "stretch";
     ttContainer.innerHTML = SOCIAL_FEEDS.tiktok.map((video, idx) => `
       <div class="feed-card" onclick="playVideoModal('tiktok', ${idx})">
         <div class="feed-card-visual">
@@ -388,6 +436,8 @@ function renderSocialFeeds() {
   // Instagram Panel
   const igContainer = document.getElementById("instagram-feed-container");
   if (igContainer) {
+    igContainer.style.gridTemplateColumns = "repeat(3, 1fr)";
+    igContainer.style.justifyItems = "stretch";
     igContainer.innerHTML = SOCIAL_FEEDS.instagram.map((post, idx) => `
       <div class="feed-card" onclick="playVideoModal('instagram', ${idx})">
         <div class="feed-card-visual">
@@ -408,26 +458,35 @@ function renderSocialFeeds() {
     `).join('');
   }
   
-  // X Twitter Panel
+  // X Twitter Panel (Health Thoughts from @ChukwumaOkoli)
   const xContainer = document.getElementById("x-feed-container");
   if (xContainer) {
-    xContainer.innerHTML = SOCIAL_FEEDS.x.map(tweet => `
-      <div class="tweet-card" onclick="window.open('${tweet.url}', '_blank')">
+    xContainer.style.gridTemplateColumns = "repeat(2, 1fr)";
+    xContainer.innerHTML = SOCIAL_FEEDS.x.map((tweet, idx) => `
+      <div class="tweet-card" onclick="${tweet.embedUrl ? `playVideoModal('x', ${idx})` : `window.open('${tweet.url}', '_blank')`}" style="cursor: pointer;">
         <div class="tweet-header">
           <div class="tweet-author-info">
             <img src="${tweet.image}" alt="${tweet.name}" />
             <div class="tweet-name-handle">
-              <strong>${tweet.name}</strong>
-              <span>${tweet.handle}</span>
+              <strong>${tweet.name} <span style="color: #00d2ff;">✓</span></strong>
+              <span>${tweet.handle} • ${tweet.time}</span>
             </div>
           </div>
-          <span class="tweet-logo">🐦</span>
+          <span class="tweet-logo" style="font-size: 1.2rem; color: #00d2ff;">𝕏</span>
         </div>
-        <p class="tweet-body">${tweet.text}</p>
+        <p class="tweet-body" style="margin-bottom: 12px;">${tweet.text}</p>
+        ${tweet.videoThumb ? `
+          <div style="position: relative; width: 100%; height: 180px; border-radius: 12px; overflow: hidden; margin-bottom: 14px;">
+            <img src="${tweet.videoThumb}" alt="Video thumbnail" style="width: 100%; height: 100%; object-fit: cover;" />
+            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center;">
+              <div style="width: 44px; height: 44px; background: rgba(0,210,255,0.9); border-radius: 50%; display: grid; place-items: center; color: #070b14; font-size: 1.1rem; font-weight: bold;">▶</div>
+            </div>
+          </div>
+        ` : ''}
         <div class="tweet-footer-metrics">
+          <span>💬 4</span>
           <span>🔁 ${tweet.retweets}</span>
           <span>♥ ${tweet.likes}</span>
-          <span>⏱ ${tweet.time}</span>
         </div>
       </div>
     `).join('');
@@ -598,26 +657,33 @@ function playVideoModal(platform, index) {
   const channelBtn = document.getElementById("video-channel-btn");
   
   title.textContent = videoData.title;
-  channelBtn.href = videoData.channelUrl;
+  channelBtn.href = videoData.postUrl || videoData.channelUrl;
   
   // Set vertical aspect ratio styles if reels/tiktok
   if (platform === "tiktok" || platform === "instagram") {
     wrapper.classList.add("is-vertical");
-    wrapper.innerHTML = `
-      <video controls autoplay loop playsinline>
-        <source src="${videoData.videoUrl}" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    `;
+    const targetEmbed = videoData.embedUrl || (platform === "instagram" ? "https://www.instagram.com/chukwumaokoli/embed" : null);
+    if (targetEmbed) {
+      wrapper.innerHTML = `
+        <iframe src="${targetEmbed}" width="100%" height="520" frameborder="0" scrolling="no" allowtransparency="true" allowfullscreen style="border-radius: 16px; border: 0; background: #ffffff;"></iframe>
+      `;
+    } else {
+      wrapper.innerHTML = `
+        <video controls autoplay loop playsinline style="width:100%; height:100%; max-height:500px; border-radius:12px;">
+          <source src="${videoData.videoUrl}" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      `;
+    }
     meta.textContent = `${videoData.author} • ${videoData.views} • ${videoData.likes || ''}`;
-    channelBtn.textContent = `View on ${platform === 'tiktok' ? 'TikTok' : 'Instagram'} &rarr;`;
+    channelBtn.innerHTML = `View on ${platform === 'tiktok' ? 'TikTok' : 'Instagram'} &rarr;`;
   } else {
     wrapper.classList.remove("is-vertical");
     wrapper.innerHTML = `
-      <iframe src="${videoData.embedUrl}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="${videoData.embedUrl}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="width:100%; height:100%; min-height:380px; border-radius:12px; border:0;"></iframe>
     `;
     meta.textContent = `${videoData.author} • ${videoData.views} • ${videoData.time}`;
-    channelBtn.textContent = "View on YouTube Channel &rarr;";
+    channelBtn.innerHTML = "View on YouTube Channel &rarr;";
   }
   
   modal.classList.add("is-open");
@@ -634,6 +700,49 @@ function closeVideoModal() {
   }
 }
 
+// Fetch Live YouTube Feed dynamically via Channel RSS
+async function fetchLiveYouTubeFeed() {
+  const channelId = "UCPNeuU4a54xNsfVqo07mxsw";
+  const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+  const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+  
+  try {
+    const res = await fetch(apiUrl);
+    const data = await res.json();
+    if (data.status === "ok" && data.items && data.items.length > 0) {
+      const liveVideos = data.items.map(item => {
+        let videoId = "";
+        if (item.guid && item.guid.includes("yt:video:")) {
+          videoId = item.guid.replace("yt:video:", "");
+        } else if (item.link) {
+          const match = item.link.match(/(?:v=|\/shorts\/|\/embed\/)([a-zA-Z0-9_-]{11})/);
+          if (match) videoId = match[1];
+        }
+        
+        const isShort = item.link && item.link.includes("/shorts/");
+        const pubDateObj = new Date(item.pubDate);
+        const formattedDate = isNaN(pubDateObj.getTime()) ? "Recently" : pubDateObj.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+        
+        return {
+          title: item.title,
+          duration: isShort ? "Short" : "Masterclass",
+          views: "YouTube",
+          time: formattedDate,
+          author: item.author || "BLACK MD ®",
+          image: item.thumbnail || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+          embedUrl: `https://www.youtube.com/embed/${videoId}`,
+          channelUrl: item.link || `https://www.youtube.com/channel/${channelId}`
+        };
+      });
+      
+      SOCIAL_FEEDS.youtube = liveVideos;
+      renderSocialFeeds();
+    }
+  } catch (err) {
+    console.warn("Using fallback YouTube video list.", err);
+  }
+}
+
 // Global Event Listeners
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
@@ -647,6 +756,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateRadioLiveStatus();
   setInterval(updateRadioLiveStatus, 60000);
   renderSocialFeeds();
+  fetchLiveYouTubeFeed();
   renderHomepageBlogPreviews();
   setupSocialTabs();
 });
